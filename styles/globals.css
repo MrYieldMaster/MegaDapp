@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Neue Machina";
+
+  src: url("../fonts/NeueMachina-Regular.woff2") format("woff2"),
+    url("../fonts/NeueMachina-Regular.otf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Machina";
+
+  src: url("../fonts/NeueMachina-Light.woff2") format("woff2"),
+    url("../fonts/NeueMachina-Light.otf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Machina";
+
+  src: url("../fonts/NeueMachina-Ultrabold.woff2") format("woff2"),
+    url("../fonts/NeueMachina-Ultrabold.otf") format("truetype");
+  font-weight: 800;
+  font-display: swap;
+}
+
+@layer base {
+  body {
+    @apply font-base text-white;
+    /* background-image: url("/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover; */
+  }
+  h1 {
+    @apply text-2xl md:text-3xl lg:text-5xl font-bold;
+  }
+
+  h2 {
+    @apply text-2xl md:text-2xl lg:text-3xl font-bold;
+  }
+}
+
+@layer utilities {
+  .border-gradient {
+    background: linear-gradient(#0f0f0f, #0f0f0f) padding-box,
+      linear-gradient(to right, #f9bb24, #811343) border-box;
+
+    border: 1px solid black;
+
+    border-image-source: linear-gradient(180deg, #1877f2 0%, #1cbf73 100%);
+  }
+}
+
+.border-image {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url("/swap.svg") 12 fill;
+}
+
+.border-image-farm {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url("/farm.svg") 8 fill;
+}
+.border-image-active {
+  border: 1px solid transparent;
+  padding: 2px 8px;
+  border-image: url("/active.svg") 1 fill;
+}
