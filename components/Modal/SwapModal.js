@@ -18,7 +18,8 @@ const Swap = ({ isOpen, closeModal }) => {
 
   useEffect(async () => {
     const resp = await axios.get(
-      "https://www.gemini.com/uniswap/manifest.json"
+      "https://www.gemini.com/uniswap/manifest.json" ,
+      "https://raw.githubusercontent.com/pancakeswap/token-list/main/lists/cmc.json"
     );
     setItems(resp?.data?.tokens);
   });
