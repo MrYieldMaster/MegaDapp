@@ -66,7 +66,7 @@ const LeftBar = ({ active, setActive }) => {
             </Link>
           </li>
           <li>
-            <span className="text-sm">Miners</span>
+            <span className="text-sm">Mega-Miners</span>
             <div className="flex flex-col gap-2 mt-2 ml-1">
               <Link href="/miners/busd">
                 <a
@@ -76,7 +76,7 @@ const LeftBar = ({ active, setActive }) => {
                       : ""
                   }`}
                 >
-                  BUSD
+                  MegaBUSD
                 </a>
               </Link>
               <Link href="/miners/bnb">
@@ -85,7 +85,7 @@ const LeftBar = ({ active, setActive }) => {
                     router.asPath === "/miners/bnb" ? "border-image-active" : ""
                   }`}
                 >
-                  BNB
+                  MegaBNB
                 </a>
               </Link>
             </div>
