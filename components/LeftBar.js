@@ -66,8 +66,6 @@ const LeftBar = ({ active, setActive }) => {
             </Link>
           </li>
           <li>
-            <span className="text-sm">Mega-Miners</span>
-            <div className="flex flex-col gap-2 mt-2 ml-1">
               <Link href="/miners/busd">
                 <a
                   className={`${
