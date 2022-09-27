@@ -21,7 +21,7 @@ const Header = ({ active, setActive, side, setSide }) => {
           </button>
           <Link href="/">
             <a className="flex gap-4 items-center">
-              <img src="/logo.png" className="hidden md:block w-24 lg:w-44" />
+              <img src="/myfLogo.png" className="hidden md:block w-24 lg:w-44" />
               <img src="/mobile-logo.svg" className="w-8 block md:hidden" />
             </a>
           </Link>
