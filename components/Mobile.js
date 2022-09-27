@@ -94,7 +94,7 @@ const Mobile = ({ side, setSide, setActive, active }) => {
                 } flex w-full items-center py-3 px-4 text-base font-normal  rounded-lg  hover:border-gradient  `}
               >
                 <img src="/icons/busd.png" />
-                <span className="ml-3 leading-3 mt-1 ">BUSD MINERS</span>
+                <span className="ml-3 leading-3 mt-1 ">MegaBUSD MINERS</span>
               </a>
             </Link>
           </li>{" "}
@@ -106,7 +106,7 @@ const Mobile = ({ side, setSide, setActive, active }) => {
                 } flex w-full items-center py-3 px-4 text-base font-normal  rounded-lg  hover:border-gradient  `}
               >
                 <img src="/icons/bnb.png" />
-                <span className="ml-3 leading-3 mt-1 ">BNB MINERS</span>
+                <span className="ml-3 leading-3 mt-1 ">MegaBNB MINERS</span>
               </a>
             </Link>
           </li>
