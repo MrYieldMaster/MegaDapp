@@ -61,9 +61,34 @@ const LeftBar = ({ active, setActive }) => {
                   router.asPath === "/lottery" ? "border-image-active" : ""
                 }`}
               >
-                Lottery
+               Lottery
               </a>
             </Link>
+          </li>
+          <li>
+            <span className="text-sm">Miners</span>
+            <div className="flex flex-col gap-2 mt-2 ml-1">
+              <Link href="/miners/busd">
+                <a
+                  className={`${
+                    router.asPath === "/miners/busd"
+                      ? "border-image-active"
+                      : ""
+                  }`}
+                >
+                  BUSD
+                </a>
+              </Link>
+              <Link href="/miners/bnb">
+                <a
+                  className={`${
+                    router.asPath === "/miners/bnb" ? "border-image-active" : ""
+                  }`}
+                >
+                  BNB
+                </a>
+              </Link>
+            </div>
           </li>
         </ul>
       </div>
@@ -72,3 +97,4 @@ const LeftBar = ({ active, setActive }) => {
 };
 
 export default LeftBar;
+
