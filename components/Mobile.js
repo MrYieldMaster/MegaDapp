@@ -75,7 +75,7 @@ const Mobile = ({ side, setSide, setActive, active }) => {
             </Link>
           </li>
           <li>
-            <Link href="/lottery">
+          <Link href="/lottery">
               <a
                 className={`${
                   router.asPath === "/lottery" ? "border-gradient" : ""
@@ -83,6 +83,30 @@ const Mobile = ({ side, setSide, setActive, active }) => {
               >
                 <img src="/icons/lottery.svg" />
                 <span className="ml-3 leading-3 mt-1 ">Lottery</span>
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/miners/busd">
+              <a
+                className={`${
+                  router.asPath === "//miners/busd" ? "border-gradient" : ""
+                } flex w-full items-center py-3 px-4 text-base font-normal  rounded-lg  hover:border-gradient  `}
+              >
+                <img src="/icons/busd.png" />
+                <span className="ml-3 leading-3 mt-1 ">BUSD MINERS</span>
+              </a>
+            </Link>
+          </li>{" "}
+          <li>
+            <Link href="/miners/bnb">
+              <a
+                className={`${
+                  router.asPath === "//miners/bnb" ? "border-gradient" : ""
+                } flex w-full items-center py-3 px-4 text-base font-normal  rounded-lg  hover:border-gradient  `}
+              >
+                <img src="/icons/bnb.png" />
+                <span className="ml-3 leading-3 mt-1 ">BNB MINERS</span>
               </a>
             </Link>
           </li>
@@ -95,7 +119,7 @@ const Mobile = ({ side, setSide, setActive, active }) => {
               class="flex items-center p-2 text-base font-normal text-white rounded-lg transition"
             >
               {/* <img src="/mobile-logo.svg" /> */}
-              <img src="token.gif" className="w-12 " />
+              <img src="/token.gif" className="w-12 " />
               <span class="">0.004$</span>
             </a>
           </li>
